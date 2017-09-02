@@ -7,7 +7,7 @@
         "type": "node",
         "request": "launch",
         "name": "Launch Program",
-        "program": "${workspaceRoot}/封装mongo数据库 dao层/app.js",
-        "cwd": "${workspaceRoot}/封装mongo数据库 dao层/"
+        "program": "${workspaceRoot}/express实现登录注册功能/app.js",
+        "cwd": "${workspaceRoot}/express实现登录注册功能/"
     }]
 }
