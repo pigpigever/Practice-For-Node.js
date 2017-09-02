@@ -2,7 +2,7 @@
   "name": "dao",
   "version": "1.0.0",
   "description": "",
-  "main": "db.js",
+  "main": "app.js",
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.15.4",
