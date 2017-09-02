@@ -1,0 +1,17 @@
+{
+  "name": "login_or_signup",
+  "version": "1.0.0",
+  "description": "注册功能",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "login_or_signup"
+  ],
+  "author": "pigpigever",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
