@@ -2,7 +2,7 @@
  * @Author: pigpigever 
  * @Date: 2017-09-02 10:57:23 
  * @Last Modified by: pigpigever
- * @Last Modified time: 2017-09-02 20:27:55
+ * @Last Modified time: 2017-09-02 20:30:48
  */
 let MongoClient = require('mongodb').MongoClient,
     assert = require('assert')
@@ -43,7 +43,7 @@ exports.insertOne = (collectionName, newData, callback) => {    //插入一条�
  * @param {function} callback
  * @return {object []}
  */
-exports.find = (collectionName, data, callback) => {           //查找数据
+exports.find = (collectionName, data, callback) => {            //查找数据
     _connectDB((err, db) => {
         let collection = db.collection(collectionName)
         collection.find().toArray((err, docs) => {
