@@ -2,23 +2,22 @@
  * @Author: pigpigever 
  * @Date: 2017-09-02 10:57:23 
  * @Last Modified by: pigpigever
- * @Last Modified time: 2017-09-02 12:24:02
+ * @Last Modified time: 2017-09-02 20:27:55
  */
-var MongoClient = require('mongodb').MongoClient,
-    test = require('assert')
+let MongoClient = require('mongodb').MongoClient,
+    assert = require('assert')
 
 
 /**
  * @param {function} callback 
  */
-function _connectDB(callback) {
-    //链接数据库
-    var url = 'mongodb://localhost:27017/test'
-    MongoClient.connect(url, function (err, db) {
+function _connectDB(callback) { //链接数据库
+    let url = 'mongodb://localhost:27017/test'
+    MongoClient.connect(url, (err, db) => {
         if (err) {
             callback(err, null)
         }
-        callback(err, db)
+        callback(null, db)
     })
 }
 
@@ -28,9 +27,9 @@ function _connectDB(callback) {
  * @param {function} callback
  * @return {void}
  */
-exports.insertOne = function (collectionName, newData, callback) {
-    _connectDB(function (err, db) {
-        var col = db.collection(collectionName)
+exports.insertOne = (collectionName, newData, callback) => {    //插入一条数据
+    _connectDB((err, db) => {
+        let col = db.collection(collectionName)
         col.insertOne(newData, function (err, result) {
             callback(err, result)
             db.close()
@@ -42,14 +41,23 @@ exports.insertOne = function (collectionName, newData, callback) {
  * @param {string} collectionName
  * @param {object} data
  * @param {function} callback
- * @return {boolean}
+ * @return {object []}
  */
-exports.find = function (collectionName, data, callback) {
-    _connectDB(function (err, db) {
-        var collection = db.collection(collectionName);
-        var result = []
-        collection.find(data).toArray(function (err, docs) {
-            callback(null,docs)
+exports.find = (collectionName, data, callback) => {           //查找数据
+    _connectDB((err, db) => {
+        let collection = db.collection(collectionName)
+        collection.find().toArray((err, docs) => {
+            callback(null, docs)
+            db.close()
         })
+    })
+}
+
+exports.deleteOne = (collectionName, data, callback) => {      //删除一条数据
+    _connectDB((err, db) => {
+        let collection = db.collection(collectionName)
+        collection.deleteOne(data)
+        callback(null)
+        db.close()
     })
 }
