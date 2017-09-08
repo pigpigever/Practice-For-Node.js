@@ -7,7 +7,7 @@
         "type": "node",
         "request": "launch",
         "name": "Launch Program",
-        "program": "${workspaceRoot}/express实现登录注册功能/app.js",
-        "cwd": "${workspaceRoot}/express实现登录注册功能/"
+        "program": "${workspaceRoot}/正则表达式/test1.js",
+        "cwd": "${workspaceRoot}/正则表达式/"
     }]
 }
