@@ -4,6 +4,11 @@ let str = '1232009345'
 let regStr = /2009/
 console.log(regStr.test(str))
 
+console.log('hello hell hoo'.match(/h.*?\b/g))      //打印 => [ 'hello', 'hell', 'hoo' ]
+console.log('aaa\nbbb\nccc'.match(/^[\s\S]*?$/g))   //打印 => [ 'aaa\nbbb\nccc' ]
+console.log('aaa\nbbb\nccc'.match(/^[\s\S]*?$/g))  //打印 => [ 'aaa', 'bbb', 'ccc' ]
+
+
 /**
  * 周曙光同学有两个名字, 分别叫做 zola 和 zuola, 
  * 人们常常混淆. 请帮周曙光同学设计一个正则表达式, 可以帮他匹配自己的名字.

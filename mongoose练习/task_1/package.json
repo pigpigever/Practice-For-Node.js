@@ -1,0 +1,14 @@
+{
+  "name": "task_1",
+  "version": "1.0.0",
+  "description": "task_1 for my mongoose practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pigpigever",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.11.10"
+  }
+}
