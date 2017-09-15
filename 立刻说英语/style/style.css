@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif !important;
+    color:#333
+}
+/**导航栏部分 */
+.container-fluid > .navbar-default{
+    margin-bottom: 0px;
+    background-color: transparent
+}
+.welcome{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: black
+}
+.welcome > span{
+    color: white
+}
+
+.navbar-default > .navbar-text > img{
+    vertical-align: middle;
+}
+
+.phone-number{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 38px;
+    color: #d94766
+}
+
+.banner > img{
+    width: 100%;
+}
+
+
+/**section-1 */
+#section-1{
+    margin-top: 100px
+}
+
+#section-1 > .container > p{
+    font-size: 38px;
+}
+
+#section-1 > .container .thumbnail{
+    max-width: 212px;
+    border:none;
+}
+#seciton-1 > .container .thumbnail .caption{
+    background-color: #eeeeee
+}
+#section-1 > .container .thumbnail p{
+    font-size: 10px;
+    text-align: left
+}
+/* #section-1 > .container  .caption{
+    padding: 0 10px;
+    background-color: #eeeeee
+}
+#section-1 > .container .caption p{
+    text-align: left;
+    font-size: 12px;
+} */
+
+#section-1 > .container>.btn-default{
+    color: white;
+    background-color: #da4866
+}
+.sub-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.text-red{
+    color: #da4866
+}
