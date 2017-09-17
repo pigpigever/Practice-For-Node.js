@@ -2,10 +2,45 @@
     margin: 0;
     padding: 0
 }
+ul{
+    list-style-type: none;
+    padding:0px;
+}
 body{
-    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif !important;
+    font-family: 'Microsoft Yahei';
     color:#333
 }
+/*公共部分*/
+.btn-red{
+    color: #ffffff;
+    background-color: #da4866
+}
+
+.btn-flat{
+    border-radius: 0px !important;
+}
+.btn:hover{
+    color:white!important
+}
+
+.btn-gray{
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: #999999;
+}
+
+.clearfix{
+    zoom:1;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
 /**导航栏部分 */
 .container-fluid > .navbar-default{
     margin-bottom: 0px;
@@ -18,7 +53,9 @@ body{
     background-color: black
 }
 .welcome > span{
-    color: white
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font: 500 14px 'Microsoft YaHei'
 }
 
 .navbar-default > .navbar-text > img{
@@ -33,13 +70,15 @@ body{
 }
 
 .banner > img{
-    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
 /**section-1 */
 #section-1{
-    margin-top: 100px
+    margin: 61px auto 42px auto;
 }
 
 #section-1 > .container > p{
@@ -47,33 +86,373 @@ body{
 }
 
 #section-1 > .container .thumbnail{
+    display: inline-block;
     max-width: 212px;
     border:none;
+    color: #666666;
 }
-#seciton-1 > .container .thumbnail .caption{
-    background-color: #eeeeee
-}
+
 #section-1 > .container .thumbnail p{
-    font-size: 10px;
-    text-align: left
-}
-/* #section-1 > .container  .caption{
-    padding: 0 10px;
-    background-color: #eeeeee
-}
-#section-1 > .container .caption p{
+    margin-top: 5px;
+    font-size: 14px;
+    /* font-size: 10px; */
+    line-height: 1em;
     text-align: left;
-    font-size: 12px;
-} */
+}
+
+#section-1 > .container .thumbnail > .caption{
+    background-color: #f2f2f2
+}
 
 #section-1 > .container>.btn-default{
     color: white;
     background-color: #da4866
 }
 .sub-title{
-    font-size: 18px;
-    font-weight: bold;
+    color: #333333;
+    font: 600 20px 'Microsoft YaHei'; 
 }
 .text-red{
-    color: #da4866
+    color: #D94766
 }
+
+#section-2{
+    width: 100%;
+    min-height: 540px;
+    background-color: #fafafa
+}
+
+#section-2 .btitle{
+    margin: 61px 0 64px 0;
+    color:#333;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#section-2 ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+#section-2 ul li{
+    margin-bottom: 20px;
+}
+
+#section-2 .row .h3{
+    color: #333333;
+    font: 600 24px 'Microsoft YaHei';
+}
+
+#section-2 .row p{
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.25em;
+}
+
+#section-2 .row>div:nth-child(2){
+    min-height: 300px;
+}
+#section-2 .row>div:nth-child(2) .level p{
+    display: inline-block;
+    width: 192px;
+    margin: 90px 0 20px 0;
+    line-height: 24px;
+}
+#section-2 .row > div{
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#section-2 .row > div > div{
+    margin-bottom: 20px;
+}
+
+#section-2 .row > div > div p{
+    font-size: 16px;
+}
+
+#section-2 .row>div:nth-child(3) h3{
+    margin-bottom: 20px;
+    color: #333333;
+    font: 500 24px 'Microsoft YaHei';
+}
+#section-2 .row>div:nth-child(3) h4{
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+#section-2 .question{
+    display: inline-block;
+    vertical-align: middle
+}
+#section-2 .question > span{
+    display: inline-block;
+    height: 40px;
+    padding-right: 3px;
+    margin-right: 10px;
+    border-right: 1px solid #ccc;
+    vertical-align: middle
+}
+#section-2 .question > a{
+    width: 140px;
+    height: 42px;
+    line-height: 31px;
+    vertical-align: middle
+}
+#section-2 .row > div:nth-child(3) ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+#section-2 .row > div:nth-child(3) li{
+    display: inline-block;
+    width: 162px;
+    height: 26px;
+    margin-bottom: 8px;
+    line-height: 26px;
+    color: #999999;
+    border: 1px solid #999999;
+    background: #FAFAFA;
+    text-align: center;
+    text-transform: uppercase;
+    font: 600 12px/1.833 'Microsoft YaHei';
+}  
+
+.level{
+    display: inline-block;
+    max-width: 360px;
+    max-height: 192px;
+    /* line-height: 192px; */
+}
+
+#section-3{
+    width: 100%;
+    min-height: 716px !important;
+    vertical-align: middle;
+}
+#section-3 .btitle{
+    margin-top: 61px;
+    font-size: 40px;
+    font-weight: 500;
+}
+#section-3 .sub-title{
+    margin-bottom: 38px;
+    color: #999999;
+    font: 500 20px 'Microsoft YaHei';
+      
+}
+#section-3 .box{
+    display: inline-block;
+    max-width: 485px;
+    max-height: 476px;
+    vertical-align: middle;
+}
+#section-3 .box:nth-child(1){
+    background-color: #333333
+}
+#section-3 .box:nth-child(3){
+    background-color: #D94766
+}
+
+#section-3 .box > h4{
+    color: #FFFFFF;
+    font: 500 30px 'Microsoft YaHei';
+}
+
+#section-3 .box p{
+    color: #999999
+}
+
+#section-3 .box h5{
+    color: #333333;
+    font: 500 20px 'Microsoft YaHei';
+    /* -moz-transform: matrix( 0.66111111111111,0,0,0.65900248647067,0,0);
+    -webkit-transform: matrix( 0.66111111111111,0,0,0.65900248647067,0,0);
+    -ms-transform: matrix( 0.66111111111111,0,0,0.65900248647067,0,0); */
+}
+
+#section-3 .box ul{
+    margin: 10px;
+    padding: 10px;;
+    background-color: white;
+}
+
+#section-3 .box ul li{
+    padding: 0px;
+    border-bottom: 1px solid #eeeeee
+}
+
+#section-4{
+    width: 100%;
+    height: 598px;
+    padding-top: 60px;
+    background-color: #fafafa;
+    /* overflow-x: scroll; */
+}
+
+#section-4 .btitle{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#section-4 .sub-title{
+    color: #999999;
+    font-weight: 500;
+}
+
+#section-4 .lists{
+    display: inline-block;
+    /* width: 100%; */
+    overflow-x: auto;
+    margin-top: 38px;
+}
+
+#section-4 .lists .active{
+    width: 520px;
+}
+
+#section-4 .lists li > div{
+    position: absolute;
+    left: 48px;
+    top: 0;
+    width: 278px;
+    height: 360px;
+    padding: 80px 20px 0;
+}
+
+#section-4 .lists ul{
+    padding: 0;
+    width: 1000%;
+}
+
+#section-4 .lists li{
+    position: relative;
+    float: left;
+    width: 45px;
+    height: 360px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#section-4 ul li h4{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 360px;
+    line-height: 1.5em;
+    padding: 80px 10px 0 10px;
+    color: #fff;
+}
+
+
+#section-4 ul li h4{
+    background-color: #d94766
+}
+
+#section-4 ul li:nth-child(2) h4,
+#section-4 ul li:nth-child(3) h4,
+#section-4 ul li:nth-child(5) h4,
+#section-4 ul li:nth-child(7) h4,
+#section-4 ul li:nth-child(9) h4{
+    background-color: #dd7288;
+}
+
+#section-4 ul li h5{
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#section-4 .lists li  div{
+    width: 475px;
+}
+
+#section-4 .lists li a{
+    /* display: block; */
+    margin-bottom: -400px;
+}
+
+
+#section-4 ul li .img-responsive{
+    height: 360px;
+}
+
+.nomargin{
+    margin: 0 !important
+}
+
+#section-5{
+    width: 100%;
+    min-height: 460px;
+    padding-top: 60px;
+}
+#section-5 .btitle{
+    margin-bottom: 48px;
+    color: #333333;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#section-5 .thumbnail{
+    padding: 50px 10px 10px 10px;
+    margin-bottom: 30px;
+}
+
+#section-5 .thumbnail > img{
+    margin-bottom: 10px
+}
+
+#section-5 .row > div .btn{
+    width: 100%;
+    height: 30px;
+    color:white;
+    background-color: #d9534f
+}
+
+#section-5 .row > div .btn:hover{
+    color:white
+}
+
+footer{
+    width: 100%;
+    min-height: 115px;
+    margin-bottom: -10px;
+    padding: 25px 0px;
+    color: rgb(199, 199, 199);
+    background-color: rgb(50, 50, 50);
+}
+footer > ul > li{
+    display: inline-block;
+    margin-right: 5px;
+    line-height: 30px;
+    padding: 0px 5px;
+}
+
+footer > ul > li > a{
+    color: rgb(199, 199, 199);
+}
+
+footer li img{
+    /* display: inline-block; */
+    width: 19px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.intercept{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-666{
+    color: #666 !important
+}
+  
+  .selector {
+    color: #333333;
+    text-transform: uppercase;
+    font: 600 40px 'Microsoft YaHei';
+  }  
