@@ -1,10 +1,5 @@
 
 $(document).ready(function () {
-    
-    // if($(this).width >=768 && width <= 992){
-    //     $('#section-2 .row > div').eq(0).addClass('text-center')
-    //     $('#section-2 .row > div').eq(2).addClass('text-center')
-    // }
     //监听窗口大小变化
     $(window).resize(function () {
         var width = $(this).width(),
